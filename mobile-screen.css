@@ -1,7 +1,105 @@
-  .showen-mobile-screen{
-    display: block;
-  }
+.showen-mobile-screen {
+  display: block;
+}
 
-  .hide-mobile-screen{
-    display: none;
-  }
+.hide-mobile-screen {
+  display: none;
+}
+
+/* ====================================
+      1. Font awesome hamburger menu
+  ======================================= */
+.absolute {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+input {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 30px;
+  transform: scale(1.4);
+}
+
+.fa-solid {
+  position: absolute;
+  right: 10vw;
+}
+
+/* ====================================
+      2. Show on click
+  ======================================= */
+
+.show-on-click {
+  display: none;
+  border-top: 2px solid black;
+}
+
+#burger:checked + .show-on-click {
+  display: block;
+}
+
+label {
+  font-size: 22px;
+  /*  border: 2px solid red;*/
+  display: block;
+  padding: 20px;
+}
+
+label:hover,
+.fa-bars:hover,
+.sub-div li a:hover,
+label:hover .fa-solid {
+  color: cyan;
+  letter-spacing: 2px;
+}
+
+.sub-div li a {
+  display: block;
+}
+
+.main-div {
+  border-bottom: 2px solid black;
+}
+
+/* ====================================
+      3. Sub of div
+  ======================================= */
+
+.sub-div {
+  display: none;
+}
+
+#html:checked + .sub-div,
+#css:checked + .sub-div,
+#js:checked + .sub-div {
+  display: block;
+}
+
+.sub-div li {
+  font-size: 17px;
+  padding: 10px 0px 10px 35px;
+}
+
+/* ====================================
+      4. Sub sub of CSS
+  ======================================= */
+
+.sub-sub-div {
+  display: none;
+  margin-top: 17px;
+}
+
+#mini-projects:checked + .sub-sub-div {
+  display: block;
+}
+
+.mini-p {
+  font-size: 18px;
+
+  display: block;
+  padding: 0px;
+}
