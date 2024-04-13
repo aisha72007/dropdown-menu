@@ -1,0 +1,77 @@
+/* ====================================
+      1. Animation for bigger screen
+  ======================================= */
+
+@keyframes down{
+  0%{
+    transform: translateY(-100px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+header{
+  animation: down 1s 1;
+}
+
+h1{
+  animation: ltr 2s 1;
+}
+
+@keyframes ltr{
+  0%{
+    transform: translateX(-100px);
+    color: cyan;
+  }
+
+  50%{
+    transform: translateX(100px);
+  }
+
+  70%{
+    transform: translate(-100px);
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.sub-ul, .sub-sub-ul{
+  animation: hover 1s 1;
+}
+
+@keyframes hover{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+/* ====================================
+      1. Animation for mobile screen
+  ======================================= */
+
+  .show-on-click, .sub-div, .sub-sub-div{
+    animation: mobilescreen 1s 1;
+  }
+
+  @keyframes mobilescreen{
+    0%{
+      transform: translateX(100px);
+    }
+
+    50%{
+      transform: translateX(-100px);
+    }
+
+    100%{
+      transform: translateX(0);
+    }
+  }
