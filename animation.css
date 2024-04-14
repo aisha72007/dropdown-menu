@@ -53,6 +53,19 @@ h1{
   }
 }
 
+span{
+  animation: heart 2s infinite linear;
+}
+
+@keyframes heart{
+  0%, 100%{
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 2;
+  }
+}
 
 /* ====================================
       1. Animation for mobile screen
