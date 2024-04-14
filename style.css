@@ -137,7 +137,32 @@ h1 {
 }
 
 /* ===============
-   2. header of mobile
+   2. main and footer
+================ */
+
+main{
+  color: #1b1b1b;
+
+  height: calc(100vh - 130px);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer{
+  background-color: #1b1b1b;
+
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* ===============
+   3. header of mobile
 ================ */
 
 .showen-mobile-screen {
